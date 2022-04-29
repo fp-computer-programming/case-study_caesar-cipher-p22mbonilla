@@ -40,7 +40,7 @@ def encrypt_message(filename, dict_key):
             fixed += shift_line(line,dict_key)
         for lines in fixed:
             final = final + lines
-        file = open("encrypted_test.txt","w")
+        file = open("text.txt","w")
         file.write(final)
         file.close()
 
